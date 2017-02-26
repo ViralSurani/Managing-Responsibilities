@@ -13,6 +13,10 @@ namespace ObserverDemo
 
         private string data = string.Empty;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="data"></param>
         public void DoSomethingWith(string data)
         {
             Console.WriteLine("Doing somthing with {0}", data);
