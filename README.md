@@ -3,3 +3,4 @@ Tactical Design Patterns in .NET: Managing Responsibilities
 
 - Project "ObserverDemo" Objective "Observer Design Pattern"
 - Project "Reservations" Objective "Abstract Factory Pattern"
+- Project "Houses" Objective "Compositing the Control Role"
