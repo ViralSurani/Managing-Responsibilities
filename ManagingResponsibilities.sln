@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservations", "Reservation
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Houses", "Houses\Houses.csproj", "{0756216C-E326-44B6-883E-40784B70F1B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Family.Common", "Family.Common\Family.Common.csproj", "{386731B8-DC84-4BCA-92A8-14AABD777D2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleFamily", "ConsoleFamily\ConsoleFamily.csproj", "{C04DD122-8DE9-4CD8-9AA9-CA1606E144B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{0756216C-E326-44B6-883E-40784B70F1B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0756216C-E326-44B6-883E-40784B70F1B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0756216C-E326-44B6-883E-40784B70F1B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{386731B8-DC84-4BCA-92A8-14AABD777D2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{386731B8-DC84-4BCA-92A8-14AABD777D2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{386731B8-DC84-4BCA-92A8-14AABD777D2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{386731B8-DC84-4BCA-92A8-14AABD777D2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C04DD122-8DE9-4CD8-9AA9-CA1606E144B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C04DD122-8DE9-4CD8-9AA9-CA1606E144B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C04DD122-8DE9-4CD8-9AA9-CA1606E144B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C04DD122-8DE9-4CD8-9AA9-CA1606E144B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
