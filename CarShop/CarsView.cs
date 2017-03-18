@@ -17,10 +17,10 @@ namespace CarShop
 
         public void Render()
         {
-            foreach (Car car in _cars)
-            {
-                Console.WriteLine("{0} {1} {2}cc {3}KW {4} seat(s)", car.Make, car.Model, car.Engine.CylinderVolumn, car.Engine.Power, car.Seats.Sum(seat => seat.Capacity));
-            }
+            //foreach (Car car in _cars)
+            //{
+            //    Console.WriteLine("{0} {1} {2}cc {3}KW {4} seat(s)", car.Make, car.Model, car.Engine.CylinderVolumn, car.Engine.Power, car.Seats.Sum(seat => seat.Capacity));
+            //}
         }
     }
 }
