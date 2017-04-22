@@ -7,6 +7,6 @@ namespace CarShop
 {
     public interface ICarVisitor : ICarPartVisitor
     {
-        void Visit(Car car);
+        void VisitCar(string make,string model);
     }
 }

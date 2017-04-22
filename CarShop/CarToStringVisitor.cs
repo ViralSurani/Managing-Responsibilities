@@ -8,12 +8,18 @@ namespace CarShop
 {
     class CarToStringVisitor : ICarVisitor
     {
-        private string _report;
+        private string _carDetails;
+        private string _engineDetails;
         private int _seatCount;
+
+        public void VisitCar(string make, string model)
+        {
+            _carDetails = string.Format("{0} {1}", make, model);
+        }
 
         public void Visit(Engine engine)
         {
-            _report = string.Format("{0} cc {1} KW", engine.CylinderVolumn, engine.Power);
+            _engineDetails = string.Format("{0} cc {1} KW", engine.CylinderVolumn, engine.Power);
         }
 
         public void Visit(Seat seat)
@@ -23,13 +29,8 @@ namespace CarShop
 
         public string GetCarDescription()
         {
-            return _report + string.Format(" {0} seats", _seatCount);
+            return string.Format("{0} {1} {2} seat(s)", _carDetails, _engineDetails, _seatCount);
         }
 
-        public void Visit(Car car)
-        {
-            //???
-            //we are stuck            
-        }
     }
 }

@@ -28,10 +28,10 @@ namespace CarShop
 
         public void Accept(ICarVisitor visitor)
         {
-            visitor.Visit(this);
             this._engine.Accept(visitor);
             foreach (Seat seat in this._seats)
                 seat.Accept(visitor);
+            visitor.VisitCar(this._make, this._model);
         }
     }
 }
