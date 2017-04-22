@@ -8,13 +8,13 @@ namespace CarShop
 {
     public class Seat
     {
-        public string Name { get; private set; }
-        public int Capacity { get; private set; }
+        private string name;
+        private int capacity;
 
         public Seat(string name, int capacity)
         {
-            this.Name = name;
-            this.Capacity = capacity;
+            this.name = name;
+            this.capacity = capacity;
         }
 
         public static IEnumerable<Seat> FourSeatConfiguration
@@ -44,7 +44,7 @@ namespace CarShop
 
         public void Accept(ICarPartVisitor visitor)
         {
-            visitor.Visit(this);
+            visitor.VisitSeat(this.name, this.capacity);
         }
 
 

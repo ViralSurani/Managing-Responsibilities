@@ -17,14 +17,14 @@ namespace CarShop
             _carDetails = string.Format("{0} {1}", make, model);
         }
 
-        public void Visit(Engine engine)
+        public void VisitEngine(float power, float cylinderVolume, float temperatureC)
         {
-            _engineDetails = string.Format("{0} cc {1} KW", engine.CylinderVolumn, engine.Power);
+            _engineDetails = string.Format("{0} cc {1} KW", cylinderVolume, power);
         }
 
-        public void Visit(Seat seat)
+        public void VisitSeat(string name, int capacity)
         {
-            _seatCount = _seatCount + seat.Capacity;
+            _seatCount = _seatCount + capacity;
         }
 
         public string GetCarDescription()
