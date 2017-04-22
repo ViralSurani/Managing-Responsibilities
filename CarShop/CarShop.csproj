@@ -56,6 +56,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram.cd" />
+    <None Include="Documents\Visitor%27s Design Pattern.mdj" />
+    <None Include="Documents\Visitor%27s Design Pattern.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Documents\Visitor%27s Design Pattern.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
