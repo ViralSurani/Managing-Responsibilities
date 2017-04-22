@@ -42,6 +42,11 @@ namespace CarShop
             }
         }
 
+        public void Accept(ICarPartVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
+
 
     }
 }

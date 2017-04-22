@@ -16,5 +16,10 @@ namespace CarShop
             this.Power = power;
             this.CylinderVolumn = cylinderVolumn;
         }
+
+        public void Accept(ICarPartVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
     }
 }

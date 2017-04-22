@@ -45,7 +45,10 @@
     <Compile Include="CarRegistration.cs" />
     <Compile Include="CarRepository.cs" />
     <Compile Include="CarsView.cs" />
+    <Compile Include="CarToStringVisitor.cs" />
     <Compile Include="Engine.cs" />
+    <Compile Include="ICarPartVisitor.cs" />
+    <Compile Include="ICarVisitor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Seat.cs" />

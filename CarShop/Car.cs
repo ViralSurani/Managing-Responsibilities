@@ -25,5 +25,13 @@ namespace CarShop
         {
             return new CarRegistration(this._make.ToUpper(), this._model, this._engine.CylinderVolumn, this._seats.Sum(seat => seat.Capacity));
         }
+
+        public void Accept(ICarVisitor visitor)
+        {
+            visitor.Visit(this);
+            this._engine.Accept(visitor);
+            foreach (Seat seat in this._seats)
+                seat.Accept(visitor);
+        }
     }
 }
