@@ -24,14 +24,14 @@
   <Class Name="CarShop.Engine">
     <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AIAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <HashCode>AIAAAAAAAAAgQAAAAAAAAAAAAAgAAAABAAQAAAAAAAI=</HashCode>
       <FileName>Engine.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CarShop.Seat">
     <Position X="8" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AIAAgAAAAAAAAAAAAAAAAAQCAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <HashCode>AIAAgAAAAAAAAAAAAAIAAAAAAAAEAAAAAAAAAAAAAEA=</HashCode>
       <FileName>Seat.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -45,22 +45,36 @@
   <Class Name="CarShop.CarToStringVisitor">
     <Position X="0.5" Y="7.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAQAAAAAQAAAAAAAAgIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAABABAAAAAAAAEAAgIAAgAAgAAAAAAAAAAAA=</HashCode>
       <FileName>CarToStringVisitor.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Class Name="CarShop.EngineStructure">
+    <Position X="2.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>EngineStructure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarShop.EngineStatus">
+    <Position X="4.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>EngineStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Interface Name="CarShop.ICarPartVisitor">
     <Position X="0.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ICarPartVisitor.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="CarShop.ICarVisitor">
     <Position X="0.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
       <FileName>ICarVisitor.cs</FileName>
     </TypeIdentifier>
   </Interface>
