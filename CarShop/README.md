@@ -6,3 +6,37 @@
 Note on hierarchical and linear data structures
 - It is not mandatory to have such data structure
 - Visitor design pattern is applicable to any data structure
+
+SUMMARY
+ Visitor design pattern and encapsulation
+- It is possible to apply the visitor even when object encapsulates its data
+- Visitor can receive raw data
+- No need to expose public accessors on the visited object
+
+ Visitor objects are typically stateful
+- New instance of the visitor must be passed to Accept every time
+
+ Visitors often used as part of the result which produces result
+- Visitor could be designed to produce concrete result
+- This will be addressed in the next module
+
+ Order of invocations
+- Never assume particular order in which Visit methods will be invoked
+- Client should be free to invoke methods in any order
+
+ Problem implementing business operations
+- Referenced objects are also encapsulating their data
+- In order to complete the operation, objects must work together
+- Visitor can be used to orchestrate multiple objects into a single operation
+
+
+SUMMARY OF Calling Protocols and the Visitor
+ Alternative implementations of the Visitor design pattern
+- It is not necessary to pass the Visitor object to the Accept methods
+• It is possible to send a factory method which produces the Visitor object
+- It is possible to provide two distinct Accept methods
+• One would return void and accept commands
+• Another would return an object and accept queries
+- Some complicated operations can completely be implemented in the Visitor
+• Domain class would then remain simple
+ These alternatives are not part of the mainstream literature
