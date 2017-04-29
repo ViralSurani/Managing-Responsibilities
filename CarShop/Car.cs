@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CarShop
 {
-    class Car
+    class Car : ICar
     {
         private readonly string _make;
         private readonly string _model;
@@ -34,6 +31,13 @@ namespace CarShop
             foreach (Seat seat in this._seats)
                 seat.Accept(() => visitor);
             visitor.VisitCar(this._make, this._model);
+        }
+
+        public T Accept<T>(Func<ICarVisitor<T>> visitorFactory)
+        {
+            ICarVisitor<T> visitor = visitorFactory();
+            Accept(() => (ICarVisitor)visitor);
+            return visitor.ProduceResult();
         }
     }
 }

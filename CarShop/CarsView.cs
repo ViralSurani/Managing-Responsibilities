@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CarShop
 {
@@ -25,8 +22,9 @@ namespace CarShop
             foreach (Car car in _cars)
             {
                 //CarToStringVisitor visitor = new CarToStringVisitor();
-                car.Accept(()=>new CarToStringVisitor());
+                string report = car.Accept(() => new CarToStringVisitor());
                 //Console.WriteLine(visitor.GetCarDescription());
+                Console.WriteLine(report);
             }
 
         }

@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace CarShop
+﻿namespace CarShop
 {
     interface ICarVisitor : ICarPartVisitor
     {
-        void VisitCar(string make,string model);
+        void VisitCar(string make, string model);
+    }
+
+    interface ICarVisitor<T> : ICarVisitor
+    {
+        T ProduceResult();
     }
 }

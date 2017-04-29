@@ -1,6 +1,6 @@
 ﻿namespace CarShop
 {
-    class CarToStringVisitor : ICarVisitor
+    class CarToStringVisitor : ICarVisitor<string>
     {
         private string _carDetails;
         private string _engineDetails;
@@ -21,7 +21,7 @@
             _seatCount = _seatCount + capacity;
         }
 
-        public string GetCarDescription()
+        public string ProduceResult()
         {
             return string.Format("{0} {1} {2} seat(s)", _carDetails, _engineDetails, _seatCount);
         }

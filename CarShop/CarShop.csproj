@@ -49,6 +49,7 @@
     <Compile Include="Engine.cs" />
     <Compile Include="EngineStatus.cs" />
     <Compile Include="EngineStructure.cs" />
+    <Compile Include="ICar.cs" />
     <Compile Include="ICarPartVisitor.cs" />
     <Compile Include="ICarVisitor.cs" />
     <Compile Include="Program.cs" />
