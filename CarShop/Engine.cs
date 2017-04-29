@@ -16,11 +16,11 @@ namespace CarShop
             this.CylinderVolumn = cylinderVolumn;
         }
 
-        public void Accept(ICarPartVisitor visitor)
+        public void Accept(Func<ICarPartVisitor> visitorFactory)
         {
             EngineStructure structure = new EngineStructure(Power, CylinderVolumn);
             EngineStatus status = new EngineStatus(temperatureC);
-            visitor.VisitEngine(structure, status);
+            visitorFactory().VisitEngine(structure, status);
         }
 
         public void Run(TimeSpan time)

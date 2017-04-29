@@ -24,9 +24,9 @@ namespace CarShop
 
             foreach (Car car in _cars)
             {
-                CarToStringVisitor visitor = new CarToStringVisitor();
-                car.Accept(visitor);
-                Console.WriteLine(visitor.GetCarDescription());
+                //CarToStringVisitor visitor = new CarToStringVisitor();
+                car.Accept(()=>new CarToStringVisitor());
+                //Console.WriteLine(visitor.GetCarDescription());
             }
 
         }

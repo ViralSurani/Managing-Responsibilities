@@ -27,11 +27,12 @@ namespace CarShop
             return null;
         }
 
-        public void Accept(ICarVisitor visitor)
+        public void Accept(Func<ICarVisitor> visitorFactory)
         {
-            this._engine.Accept(visitor);
+            ICarVisitor visitor = visitorFactory();
+            this._engine.Accept(() => visitor);
             foreach (Seat seat in this._seats)
-                seat.Accept(visitor);
+                seat.Accept(() => visitor);
             visitor.VisitCar(this._make, this._model);
         }
     }
