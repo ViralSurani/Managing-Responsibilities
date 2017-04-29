@@ -28,3 +28,15 @@ SUMMARY
 - Referenced objects are also encapsulating their data
 - In order to complete the operation, objects must work together
 - Visitor can be used to orchestrate multiple objects into a single operation
+
+
+SUMMARY OF Calling Protocols and the Visitor
+ Alternative implementations of the Visitor design pattern
+- It is not necessary to pass the Visitor object to the Accept methods
+• It is possible to send a factory method which produces the Visitor object
+- It is possible to provide two distinct Accept methods
+• One would return void and accept commands
+• Another would return an object and accept queries
+- Some complicated operations can completely be implemented in the Visitor
+• Domain class would then remain simple
+ These alternatives are not part of the mainstream literature
