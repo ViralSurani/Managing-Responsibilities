@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CarShop
 {
-    public interface ICarVisitor : ICarPartVisitor
+    interface ICarVisitor : ICarPartVisitor
     {
         void VisitCar(string make,string model);
     }

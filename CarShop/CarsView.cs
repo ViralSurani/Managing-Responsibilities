@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarShop
 {
-    public class CarsView
+    class CarsView
     {
         private IEnumerable<Car> _cars;
 

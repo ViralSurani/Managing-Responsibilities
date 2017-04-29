@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarShop
 {
-    public class Car
+    class Car
     {
         private readonly string _make;
         private readonly string _model;

@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CarShop
 {
-    public class Engine
+    class Engine
     {
         private float Power;
         private float CylinderVolumn;
@@ -22,7 +18,9 @@ namespace CarShop
 
         public void Accept(ICarPartVisitor visitor)
         {
-            visitor.VisitEngine(this.Power, this.CylinderVolumn, this.temperatureC);
+            EngineStructure structure = new EngineStructure(Power, CylinderVolumn);
+            EngineStatus status = new EngineStatus(temperatureC);
+            visitor.VisitEngine(structure, status);
         }
 
         public void Run(TimeSpan time)

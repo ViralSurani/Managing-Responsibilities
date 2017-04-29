@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CarShop
+﻿namespace CarShop
 {
     class CarToStringVisitor : ICarVisitor
     {
@@ -17,9 +11,9 @@ namespace CarShop
             _carDetails = string.Format("{0} {1}", make, model);
         }
 
-        public void VisitEngine(float power, float cylinderVolume, float temperatureC)
+        public void VisitEngine(EngineStructure structure, EngineStatus status)
         {
-            _engineDetails = string.Format("{0} cc {1} KW", cylinderVolume, power);
+            _engineDetails = string.Format("{0} cc {1} KW", structure.CylinderVolumn, structure.Power);
         }
 
         public void VisitSeat(string name, int capacity)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarShop
 {
-    public class CarRepository
+    class CarRepository
     {
         public IEnumerable<Car> GetAll()
         {

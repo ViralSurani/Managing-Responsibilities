@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarShop
 {
-    public class Seat
+    class Seat
     {
         private string name;
         private int capacity;

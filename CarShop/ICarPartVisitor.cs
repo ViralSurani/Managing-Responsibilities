@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CarShop
+﻿namespace CarShop
 {
-    public interface ICarPartVisitor
+    interface ICarPartVisitor
     {
-        void VisitEngine(float power, float cylinderVolume, float temperatureC);
+        void VisitEngine(EngineStructure structure, EngineStatus status);
         void VisitSeat(string name, int capacity);
     }
 }
