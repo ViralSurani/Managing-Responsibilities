@@ -65,6 +65,14 @@
       <FileName>EngineStatus.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="CarShop.CarRegistrationBuilder">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAABAAEkAAEAAgAAQAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>CarRegistrationBuilder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Interface Name="CarShop.ICarPartVisitor">
     <Position X="0.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
