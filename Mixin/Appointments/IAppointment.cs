@@ -1,0 +1,8 @@
+﻿
+
+namespace Appointments
+{
+    interface IAppointment
+    {
+    }
+}
