@@ -1,0 +1,40 @@
+Mixin Class Defined
+"A mixin class is a class that's intended to provide an optional interface
+or functionality to other classes. It's similar to an abstract class in that it's not
+intended to be instantiated. Mixin classes require multiple inheritance."
+Gamma et al., Design Patterns: Elements of Reusable Object-Oriented Software
+
+Mixins in .NET
+-.NET languages do not support multiple class inheritance
+  Mixin can be an interface
+- A class can implement interfaces even when it has a base class
+  Existing class can also be an interface
+  
+Is Mixin a Pattern?
+-"Each pattern describes a problem which occurs over and over again
+  in our environment, and then describes the core of the solution to that problem,
+  in such a way that you can use this solution a million times over,
+  without ever doing it the same way twice."
+  Alexander et al., A Pattern Language
+  
+-Is Mixin a Pattern?
+ Does the language support Mixins natively?
+- Common Lisp has an idiomatic implementation of Mixins
+- C++ supports multiple class inheritance
+ Mixins in C#
+- Not supported out of the box
+- Used in a way characteristic to patterns
+
+Implementing Mixins in C#
+ Aspect-oriented frameworks
+- Intention to mix interfaces is expressed using attributes
+• Beware of strange solutions in these frameworks
+- Frameworks add complexity to the project
+• Make sure that added complexity pays off
+ Using extension methods
+- New method is added to the original class
+- Extension method acts as any other method defined on the class
+• Extension method can only see public members of the class
+ The goal of this module
+- Implement a simple solution
+- Intentions must be clearly indicated in code
