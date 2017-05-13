@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Appointments
 {
     class DomainService
-    {
-        private readonly DataService _dataService;
+    {        
+        private readonly IUserFactory _userFactory;
 
-        public DomainService(DataService dataService)
-        {
-            _dataService = dataService;
+        public DomainService(IUserFactory userFactory)
+        {            
+            _userFactory = userFactory;
         }
 
         public IUser RegisterUser(string name, string password)
@@ -31,8 +26,8 @@ namespace Appointments
 
         private IRegistrantUser CreateUser(string name, string password)
         {
-            IUser user = new User(name);
-            return new PersistableUser(user, _dataService, password);
+            IUser user = _userFactory.CreateUser(name);
+            return _userFactory.CreateRegistrantUser(user, password);
         }
     }
 }

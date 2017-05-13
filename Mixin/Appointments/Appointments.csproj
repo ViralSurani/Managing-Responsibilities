@@ -48,12 +48,14 @@
     <Compile Include="IRegistrantUser.cs" />
     <Compile Include="IRegistrationService.cs" />
     <Compile Include="IUser.cs" />
+    <Compile Include="IUserFactory.cs" />
     <Compile Include="IUserVisitor.cs" />
     <Compile Include="Meeting.cs" />
     <Compile Include="PersistableUser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="UserFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
