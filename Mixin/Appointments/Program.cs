@@ -9,13 +9,26 @@ namespace Appointments
             DomainService domainService = new DomainService(new UserFactory(new DataService()));
 
             IUser user = domainService.RegisterUser("viral", "hello");
-            Console.WriteLine("{0}\n", user);
+            IUser jil = domainService.RegisterUser("jil", "pwd");
+            IUser joe = domainService.RegisterUser("joe", "pwd");
+            IUser jack = domainService.RegisterUser("jack", "pwd");
 
-            IAppointment appointment = user.MakeAppointment(DateTime.Now.Date.AddHours(40));
-            Console.WriteLine("{0}\n", appointment);
+            IUserGroup group = new UserGroup();
+            group.AddMember(user);
+            group.AddMember(jil);
+            group.AddMember(joe);
+            group.AddMember(jack);
 
-            user = domainService.ChangePassword("viral", "hello", "world");
-            Console.WriteLine("{0}\n", user);
+            IRegistrantGroup reGroup = new RegistrantGroup(group,"friends","secret");
+            reGroup.Register();
+
+            //Console.WriteLine("{0}\n", user);
+
+            //IAppointment appointment = user.MakeAppointment(DateTime.Now.Date.AddHours(40));
+            //Console.WriteLine("{0}\n", appointment);
+
+            //user = domainService.ChangePassword("viral", "hello", "world");
+            //Console.WriteLine("{0}\n", user);
 
             Console.ReadKey();
         }
